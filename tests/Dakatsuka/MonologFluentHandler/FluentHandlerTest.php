@@ -17,7 +17,7 @@ class FluentHandlerTest extends \PHPUnit_Framework_TestCase
         $record = array();
         $record['channel']   = 'debug';
         $record['message']   = 'monolog.fluent';
-        $record['context']   = ['foo' => 'bar'];
+        $record['context']   = array('foo' => 'bar');
         $record['formatted'] = 'formatted message';
         $record['level']     = Logger::DEBUG;
 
