@@ -1,0 +1,24 @@
+{
+    "name": "dakatsuka/monolog-fluent-handler",
+    "type": "library",
+    "description": "Fluentd Handler for Monolog",
+    "keywords": ["log", "logging", "logger", "fluentd"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dai Akatsuka",
+            "email": "d.akatsuka@gmail.com",
+            "homepage": "https://github.com/dakatsuka/MonologFluentHandler"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "fluent/logger": "0.3.*",
+        "monolog/monolog": "1.6.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Dakatsuka\\MonologFluentHandler": "src/"
+        }
+    }
+}
