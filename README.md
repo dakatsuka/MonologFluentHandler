@@ -38,6 +38,21 @@ $logger->info('example.fluentd', array('fizz' => 'buzz'));
 // 2013-10-11 01:00:00 +0900 dakatsuka.example.fluentd: {"fizz":"buzz","level":"INFO"}
 ```
 
+You can specify the host name and port.
+```php
+<?php
+$logger = new Logger('dakatsuka');
+$logger->pushHandler(new FluentHandler(null, '127.0.0.1', 24224));
+```
+
+You can specify the FluentLogger object.
+```php
+<?php
+$fluent = new FluentLogger("localhost", 24224);
+$logger = new Logger('dakatsuka');
+$logger->pushHandler(new FluentHandler($fluent));
+```
+
 ## Contributing
 
 1. Fork it
