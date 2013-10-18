@@ -1,5 +1,8 @@
 # MonologFluentHandler [![Build Status](https://travis-ci.org/dakatsuka/MonologFluentHandler.png?branch=master)](https://travis-ci.org/dakatsuka/MonologFluentHandler)
 
+[![Latest Stable Version](https://poser.pugx.org/dakatsuka/monolog-fluent-handler/v/stable.png)](https://packagist.org/packages/dakatsuka/monolog-fluent-handler)
+[![Latest Unstable Version](https://poser.pugx.org/dakatsuka/monolog-fluent-handler/v/unstable.png)](https://packagist.org/packages/dakatsuka/monolog-fluent-handler)
+
 Fluentd Handler for Monolog
 
 ## Installation
