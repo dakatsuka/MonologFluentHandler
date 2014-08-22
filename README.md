@@ -1,4 +1,4 @@
-# MonologFluentHandler [![Build Status](https://travis-ci.org/dakatsuka/MonologFluentHandler.png?branch=master)](https://travis-ci.org/dakatsuka/MonologFluentHandler)
+# MonologFluentHandler [![Build Status](https://travis-ci.org/dakatsuka/MonologFluentHandler.svg?branch=master)](https://travis-ci.org/dakatsuka/MonologFluentHandler)
 
 [![Latest Stable Version](https://poser.pugx.org/dakatsuka/monolog-fluent-handler/v/stable.png)](https://packagist.org/packages/dakatsuka/monolog-fluent-handler)
 [![Latest Unstable Version](https://poser.pugx.org/dakatsuka/monolog-fluent-handler/v/unstable.png)](https://packagist.org/packages/dakatsuka/monolog-fluent-handler)
@@ -12,7 +12,7 @@ Add this lines to your composer.json:
 ```json
 {
     "require": {
-        "dakatsuka/monolog-fluent-handler": "1.0.0"
+        "dakatsuka/monolog-fluent-handler": "1.1.0"
     }
 }
 ```
@@ -73,4 +73,4 @@ $ make test
 
 ## Copyright
 
-Copyright (C) 2013 Dai Akatsuka, released under the MIT License.
+Copyright (C) 2013-2014 Dai Akatsuka, released under the MIT License.
