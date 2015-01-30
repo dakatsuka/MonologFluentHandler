@@ -12,7 +12,7 @@ Add this lines to your composer.json:
 ```json
 {
     "require": {
-        "dakatsuka/monolog-fluent-handler": "1.1.0"
+        "dakatsuka/monolog-fluent-handler": "1.2.0"
     }
 }
 ```
@@ -73,4 +73,4 @@ $ make test
 
 ## Copyright
 
-Copyright (C) 2013-2014 Dai Akatsuka, released under the MIT License.
+Copyright (C) 2013-2015 Dai Akatsuka, released under the MIT License.
