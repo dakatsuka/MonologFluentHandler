@@ -14,7 +14,7 @@
     "require": {
         "php": ">=5.3",
         "fluent/logger": "0.3.*",
-        "monolog/monolog": ">=1.6,<1.11"
+        "monolog/monolog": "~1.6"
     },
     "autoload": {
         "psr-0": {
