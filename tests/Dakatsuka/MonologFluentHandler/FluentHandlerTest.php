@@ -27,7 +27,7 @@ class FluentHandlerTest extends \PHPUnit_Framework_TestCase
     public function testWrite()
     {
         $context = $this->record['context'];
-        $context['level'] = Logger::getLevelName($this->record['level']);
+        $level = Logger::getLevelName($this->record['level']);
 
         $loggerMock = $this->getMockBuilder('Fluent\Logger\FluentLogger')
             ->disableOriginalConstructor()
@@ -35,7 +35,7 @@ class FluentHandlerTest extends \PHPUnit_Framework_TestCase
         $loggerMock
             ->expects($this->once())
             ->method('post')
-            ->with('debug.monolog.fluent', $context);
+            ->with('debug', array('message'=>$this->record['message'], 'context'=>$context, 'level'=>$level));
 
         $handler = new FluentHandler($loggerMock);
         $handler->write($this->record);
