@@ -33,12 +33,12 @@ use Monolog\Logger;
 $logger = new Logger('dakatsuka');
 $logger->pushHandler(new FluentHandler());
 
-$logger->debug('example.monolog', array('foo' => 'bar'));
-$logger->info('example.fluentd', array('fizz' => 'buzz'));
+$logger->debug('Debug message', array('foo' => 'bar'));
+$logger->info('Something happened', array('fizz' => 'buzz'));
 
 // Fluentd:
-// 2013-10-11 01:00:00 +0900 dakatsuka.example.monolog: {"foo":"bar","level":"DEBUG"}
-// 2013-10-11 01:00:00 +0900 dakatsuka.example.fluentd: {"fizz":"buzz","level":"INFO"}
+// 2013-10-11 01:00:00 +0900 dakatsuka: {"message":"Debug message","level":"DEBUG","context":{"foo":"bar"}}
+// 2013-10-11 01:00:00 +0900 dakatsuka: {"message":"Something happened","level":"INFO","context":{"fizz":"buzz"}}
 ```
 
 You can specify the host name and port.
